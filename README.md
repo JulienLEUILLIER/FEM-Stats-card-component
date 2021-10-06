@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 
 ![desktop-layout](./desktop-layout.png?raw=true "Desktop Layout")
-![mobile-layout](./desktop-layout.png?raw=true "Mobile Layout")
+![mobile-layout](./mobile-layout.png?raw=true "Mobile Layout")
 
 ### Links
 
