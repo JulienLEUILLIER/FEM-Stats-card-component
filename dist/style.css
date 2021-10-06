@@ -1,0 +1,142 @@
+@import url("https://fonts.google.com/specimen/Inter");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;400;700&display=swap");
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86.67rem;
+  height: 48.26rem;
+  padding: 10.8rem 10rem;
+  background-color: black;
+}
+@media (max-width: 81.33rem) {
+  .main-container {
+    height: 64rem;
+    width: 25rem;
+    padding: 5.86rem 1.6rem;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #090b1a;
+  color: white;
+  font-family: "Inter", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 81.33rem) {
+  .card {
+    flex-direction: column-reverse;
+  }
+}
+.card__text {
+  padding: 4.8rem 4.4rem;
+  background-color: #1b1938;
+  line-height: 1.5;
+  width: 50%;
+}
+@media (max-width: 81.33rem) {
+  .card__text {
+    width: 100%;
+    padding: 3rem;
+    text-align: center;
+  }
+}
+.card__text .highlight__word {
+  color: #aa5cdb;
+}
+.card__title {
+  font-size: 1.73rem;
+  font-weight: 700;
+}
+@media (max-width: 81.33rem) {
+  .card__title {
+    font-size: 1.47rem;
+  }
+}
+.card__description {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 5.33rem;
+  font-weight: 400;
+}
+.card__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 81.33rem) {
+  .card__stats {
+    flex-direction: column;
+  }
+}
+.card__stats .stat {
+  text-transform: uppercase;
+}
+.card__stats .stat__value {
+  font-weight: 700;
+  font-size: 1.13rem;
+  margin: 0;
+}
+@media (max-width: 81.33rem) {
+  .card__stats .stat__value {
+    font-size: 1.33rem;
+  }
+}
+.card__stats .stat__description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.666rem;
+  letter-spacing: 2px;
+  font-family: "Lexend Deca", sans-serif;
+}
+@media (max-width: 81.33rem) {
+  .card__stats .stat__description {
+    margin-bottom: 2.4rem;
+  }
+}
+.card__image__container {
+  position: relative;
+}
+@media (max-width: 81.33rem) {
+  .card__image__container {
+    width: 100%;
+  }
+}
+.card__image__container::after {
+  content: "";
+  position: absolute;
+  background: rgba(73, 3, 117, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.card__image {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

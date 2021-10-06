@@ -1,0 +1,125 @@
+@use 'variables' as var;
+@use 'mixins' as mix;
+
+.main-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 86.67rem;
+   height: 48.26rem;
+   padding: 10.8rem 10rem;
+   background-color: black;
+
+   @include mix.breakpoint(large) {
+      height: 64rem;
+      width: 25rem;
+      padding: 5.86rem 1.6rem;
+   }
+}
+
+.card {
+   display: flex;
+   align-items: stretch;
+   justify-content: center;
+   background-color: var.$veryDarkBlue;
+   color: var.$white;
+   font-family: 'Inter', sans-serif;
+   border-radius: 10px;
+   overflow: hidden;
+
+   @include mix.breakpoint(large) {
+      flex-direction: column-reverse;
+   }
+
+   &__text {
+      padding: 4.8rem 4.4rem;
+      background-color: var.$darkDesaturatedBlue;
+      line-height: 1.5;
+      width: 50%;
+
+      @include mix.breakpoint(large) {
+         width: 100%;
+         padding: 3rem;
+         text-align: center;
+      }
+
+      & .highlight__word {
+         color: var.$softViolet;
+      }
+   }
+
+   &__title {
+      font-size: 1.73rem;
+      font-weight: 700;
+
+      @include mix.breakpoint(large) {
+         font-size: 1.47rem;
+      }
+   }
+
+   &__description {
+      color: var.$greyishWhite;
+      margin-bottom: 5.33rem;
+      font-weight: 400;
+   }
+
+   &__stats {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include mix.breakpoint(large) {
+         flex-direction: column;
+      }
+
+      .stat {
+         text-transform: uppercase;
+      
+         &__value {
+
+            font-weight: 700;
+            font-size: 1.13rem;
+            margin: 0;
+
+            @include mix.breakpoint(large) {
+               font-size: 1.33rem;
+            }
+         }
+      
+         &__description {
+            color: var.$greyishWhite;
+            font-size: 0.666rem;
+            letter-spacing: 2px;
+            font-family: 'Lexend Deca', sans-serif;
+
+            @include mix.breakpoint(large){
+               margin-bottom: 2.4rem;
+            }
+         }
+      }
+   }
+
+   &__image__container {
+      position: relative;
+
+      @include mix.breakpoint(large) {
+         width: 100%;
+      }
+      
+      &::after{
+         content: "";
+         position: absolute;
+         background: rgba(73, 3, 117, 60%);
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
+   }
+
+   &__image {
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+   }
+}
