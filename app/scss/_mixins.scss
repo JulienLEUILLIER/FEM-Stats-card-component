@@ -1,4 +1,4 @@
-$breakpoints: ("large": "81.33rem");
+$breakpoints: ("large": "60rem");
 
 @mixin breakpoint($size) {
    @media (max-width: map-get($breakpoints, $size)){

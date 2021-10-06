@@ -5,40 +5,30 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 86.67rem;
-   height: 48.26rem;
-   padding: 10.8rem 10rem;
    background-color: black;
-
-   @include mix.breakpoint(large) {
-      height: 64rem;
-      width: 25rem;
-      padding: 5.86rem 1.6rem;
-   }
 }
 
 .card {
    display: flex;
    align-items: stretch;
-   justify-content: center;
    background-color: var.$veryDarkBlue;
    color: var.$white;
    font-family: 'Inter', sans-serif;
    border-radius: 10px;
-   overflow: hidden;
+   padding: 10.8rem 10rem;
 
    @include mix.breakpoint(large) {
       flex-direction: column-reverse;
+      padding: 5.86rem 1.6rem;
+      min-width: 26.67rem;
    }
 
    &__text {
       padding: 4.8rem 4.4rem;
       background-color: var.$darkDesaturatedBlue;
       line-height: 1.5;
-      width: 50%;
 
       @include mix.breakpoint(large) {
-         width: 100%;
          padding: 3rem;
          text-align: center;
       }
@@ -101,25 +91,23 @@
 
    &__image__container {
       position: relative;
+      background-image: url('/images/image-header-desktop.jpg');
+      width: 100%;
+      background-size: cover;
 
-      @include mix.breakpoint(large) {
-         width: 100%;
+      @include mix.breakpoint(large){
+         height: 16rem;
       }
+
       
       &::after{
          content: "";
          position: absolute;
-         background: rgba(73, 3, 117, 60%);
+         background: hsla(277, 64%, 61%, 50%);
          top: 0;
          left: 0;
          right: 0;
          bottom: 0;
       }
-   }
-
-   &__image {
-      overflow: hidden;
-      height: 100%;
-      width: 100%;
    }
 }
