@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://fem-stats-card-component.vercel.app/)
-- Live Site URL: [](https://fem-stats-card-component.vercel.app/)
+- Live Site URL: [Vercel hosted](https://fem-stats-card-component.vercel.app/)
 
 ## My process
 
