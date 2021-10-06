@@ -20,7 +20,6 @@
    @include mix.breakpoint(large) {
       flex-direction: column-reverse;
       padding: 5.86rem 1.6rem;
-      min-width: 26.67rem;
    }
 
    &__text {
